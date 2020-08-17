@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/xiaomi/joyeuse
+DEVICE_PATH := device/xiaomi/miatoll
 
 # Architecture
 TARGET_ARCH := arm64
@@ -75,7 +75,7 @@ BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
 #TARGET_USE_SDCLANG := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := joyeuse
+TARGET_OTA_ASSERT_DEVICE := curtana,excalibur,gram,joyeuse
 
 # Avb
 BOARD_AVB_ENABLE := true

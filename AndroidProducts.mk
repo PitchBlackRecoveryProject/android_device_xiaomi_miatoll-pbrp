@@ -15,6 +15,6 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_joyeuse.mk
+    $(LOCAL_DIR)/omni_miatoll.mk
 
-COMMON_LUNCH_CHOICES := omni_joyeuse-eng
+COMMON_LUNCH_CHOICES := omni_miatoll-eng

@@ -15,9 +15,9 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := joyeuse
+PRODUCT_RELEASE_NAME := miatoll
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
-DEVICE_PATH := device/xiaomi/joyeuse
+DEVICE_PATH := device/xiaomi/miatoll
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
@@ -27,10 +27,10 @@ $(call inherit-product, vendor/pb/config/common.mk)
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := joyeuse
-PRODUCT_NAME := omni_joyeuse
+PRODUCT_DEVICE := miatoll
+PRODUCT_NAME := omni_miatoll
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Redmi Note 9 Pro
+PRODUCT_MODEL := SM6250
 PRODUCT_MANUFACTURER := Xiaomi
 
 # HACK: Set vendor patch level
