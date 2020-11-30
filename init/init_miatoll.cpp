@@ -79,6 +79,8 @@ void vendor_load_properties() {
     if (hwname == "curtana") {
         if (region == "Global_TWO") {
             model_property_override("curtana", "Redmi Note 9S");
+        } else if (region == "Japan") {
+            model_property_override("curtana", "Redmi Note 9S");
         } else if (region == "India") {
             model_property_override("curtana", "Redmi Note 9 Pro");
         }
