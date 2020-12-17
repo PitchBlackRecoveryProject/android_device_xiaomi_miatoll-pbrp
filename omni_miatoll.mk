@@ -26,6 +26,10 @@ $(call inherit-product, vendor/pb/config/common.mk)
 
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root)
 
+PRODUCT_PACKAGES += \
+    android.hardware.fastboot@1.0-impl-mock \
+    android.hardware.fastboot@1.0-impl-mock.recovery
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := miatoll
 PRODUCT_NAME := omni_miatoll
