@@ -27,6 +27,7 @@ $(call inherit-product, vendor/pb/config/common.mk)
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root)
 
 PRODUCT_PACKAGES += \
+	fastbootd \
     android.hardware.fastboot@1.0-impl-mock \
     android.hardware.fastboot@1.0-impl-mock.recovery
 
