@@ -15,6 +15,7 @@
 #
 
 DEVICE_PATH := device/xiaomi/miatoll
+BUILD_BROKEN_DUP_RULES := true
 
 # Architecture
 TARGET_ARCH := arm64
