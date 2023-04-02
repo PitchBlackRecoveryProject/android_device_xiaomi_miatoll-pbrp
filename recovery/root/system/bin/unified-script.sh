@@ -1,7 +1,8 @@
+#!/system/bin/sh
 # This script is needed to automatically set device props.
 load_curtana()
 {
-    resetprop "ro.product.model" "Redmi Note 9S"
+    resetprop "ro.product.model" "Note 9S"
     resetprop "ro.product.name" "curtana"
     resetprop "ro.build.product" "curtana"
     resetprop "ro.product.device" "curtana"
@@ -10,7 +11,7 @@ load_curtana()
 
 load_joyeuse()
 {
-    resetprop "ro.product.model" "Redmi Note 9 Pro"
+    resetprop "ro.product.model" "Note 9 Pro"
     resetprop "ro.product.name" "joyeuse"
     resetprop "ro.build.product" "joyeuse"
     resetprop "ro.product.device" "joyeuse"
@@ -19,7 +20,7 @@ load_joyeuse()
 
 load_excalibur()
 {
-    resetprop "ro.product.model" "Redmi Note 9 Pro Max"
+    resetprop "ro.product.model" "Note 9 Pro Max"
     resetprop "ro.product.name" "excalibur"
     resetprop "ro.build.product" "excalibur"
     resetprop "ro.product.device" "excalibur"
@@ -28,7 +29,8 @@ load_excalibur()
 
 load_gram()
 {
-    resetprop "ro.product.model" "POCO M2 Pro"
+    resetprop "ro.product.model" "M2 Pro"
+	resetprop "ro.product.brand" "POCO"
     resetprop "ro.product.name" "gram"
     resetprop "ro.build.product" "gram"
     resetprop "ro.product.device" "gram"
