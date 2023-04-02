@@ -49,6 +49,13 @@ service unified-script /system/bin/unified-script.sh
     oneshot
     seclabel u:r:recovery:s0
 
+service wrappedkey-fix /system/bin/wrappedkey-fix.sh
+    user root
+    group root
+    disabled
+    oneshot
+    seclabel u:r:recovery:s0
+
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
@@ -65,6 +72,10 @@ on fs
     chown system system /sys/bus/i2c/drivers/aw8624_haptic/2-005a/osc_save
     chown system system /sys/bus/i2c/drivers/aw8624_haptic/2-005a/custom_wave
     chmod 0666  /sys/bus/i2c/drivers/aw8624_haptic/2-005a/custom_wave
+
+on property:ro.crypto.state=encrypted && property:ro.crypto.type=file
+    chmod 0777 /system/bin/wrappedkey-fix.sh
+    start wrappedkey-fix
 
 on boot
     start health-hal-2-1
